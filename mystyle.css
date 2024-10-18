@@ -1,8 +1,11 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+
+/* Header Styles */
 header {
     background-color: #6b8f4e;
     display: flex;
@@ -33,6 +36,8 @@ header {
 .logo {
     height: 50px;
 }
+
+/* Hero Section */
 .hero {
     background-color: #dfc59c;
     text-align: center;
@@ -53,6 +58,8 @@ header {
     border-radius: 20px;
     font-size: 1.2em;
 }
+
+/* Footer Styles */
 footer {
     background-color: #6b8f4e;
     padding: 20px;
@@ -99,3 +106,4 @@ footer {
     text-decoration: none;
     margin: 0 5px;
 }
+
