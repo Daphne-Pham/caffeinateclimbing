@@ -7,7 +7,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: ##ffead1;
+    background-color: #ffead1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@ header {
 }
 
 .navbar ul li a {
-    color: bright orange;
+    color:#515739;
     text-decoration: none;
     text-transform: lowercase;
 }
