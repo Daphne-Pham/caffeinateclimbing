@@ -7,7 +7,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #ffead1;
+    background-color:#515739;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@ header {
 }
 
 .navbar ul {
-    background: #515739; 
+    background:#515739; 
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ header {
 }
 
 .navbar ul li a {
-    background: #515739;
+    background:#515739;
     color: #ffead1;
     text-decoration: none;
     text-transform: lowercase;
@@ -41,7 +41,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-color: #ffead1;
+    background-color:#ffead1;
     text-align: center;
     padding: 100px 20px;
 }
@@ -53,7 +53,7 @@ header {
 }
 
 .explore-btn {
-    background-color: #f8a642;
+    background-color:#fd6f2f;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -92,7 +92,7 @@ footer {
 }
 
 .follow-btn, .like-btn {
-    background-color: #f8a642;
+    background-color: : #fd6f2f;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
