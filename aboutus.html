@@ -1,94 +1,69 @@
-<html>
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Caffeinated Climbing</title>
-   <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-   
- </head>
+    <title>Caffeinated Climbing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <header class="bg-success py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <img src="Logo.jpg" alt="Caffeinated Climbing Logo" class="logo">
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
-                    <li class="nav-item"><a href="aboutus.html" class="nav-link text-white">about us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-white">service</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-white">registration</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-white">find a store</a></li>
-                </ul>
-            </nav>
-            <div class="search-icon text-white">
-                <span>🔍</span>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Caffeinated Climbing Logo">
             </div>
-        </div>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">registration</a></li>
+                <li><a href="#">find a store</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+            </div>
+        </nav>
     </header>
-  
+
     <section class="hero">
+        <h1>About Us</h1>
+    </section>
+
+    <section class="content">
         <div class="container">
-            <h1 class="display-4">About Us</h1>
+            <h2>Welcome to Caffeinated Climbing!<br>It is very nice to meet you!</h2>
+            <div class="info-box">
+                <div class="box">
+                    <h3>Company Mission</h3>
+                    <p>Bacon ipsum dolor amet porchetta kielbasa boudin venison, brisket andouille swine drumstick...</p>
+                </div>
+                <div class="box">
+                    <h3>How to contact us</h3>
+                    <p>Bacon ipsum dolor amet porchetta kielbasa boudin venison, brisket andouille swine drumstick...</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="bg-light text-center py-2">
-        <div class="container">
-            <a href="#" class="mx-3 text-decoration-none">Home</a> |
-            <a href="#" class="mx-3 text-decoration-none">Registration</a> |
-            <a href="#" class="mx-3 text-decoration-none">Store near you</a>
-        </div>
-    </section>
-  
-    <main class="container my-5">
-        <div class="text-center mb-4">
-            <h2 class="text-success">Welcome to Caffeinated Climbing!</h2>
-            <p class="lead">It is very nice to meet you!</p>
-        </div>
 
-        <div class="row text-center">
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 border-success">
-                    <div class="card-body">
-                        <h3 class="card-title text-success">Company Mission</h3>
-                        <p class="card-text">Bacon ipsum dolor amet porchetta kielbasa boudin venison, brisket andouille swine drumstick. Pastrami flank jowl shoulder, sausage hamburger sirloin pork chop pancetta tongue fatback ball tip bresaola.</p>
-                    </div>
-                </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Caffeinated Climbing">
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 border-success">
-                    <div class="card-body">
-                        <h3 class="card-title text-success">How to contact us</h3>
-                        <p class="card-text">Pastrami flank jowl shoulder, sausage hamburger sirloin pork chop pancetta tongue fatback ball tip bresaola. Pig drumstick turducken pork belly, alcatra chislic ham hock kielbasa kevin.</p>
-                    </div>
-                </div>
+            <div class="footer-address">
+                <h4>Mountain Climbing</h4>
+                <p>Suite 214B <br>1815 Moore Street<br>Huntingdon, PA 16652</p>
+            </div>
+            <div class="footer-social">
+                <button>FOLLOW</button>
+                <button>LIKE</button>
+                <button>SUBSCRIBE</button>
             </div>
         </div>
-    </main>
-
-    <footer class="bg-success text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 text-center">
-                    <img src="logo.png" alt="Caffeinated Climbing Logo" class="logo mb-3">
-                </div>
-                <div class="col-md-3">
-                    <h5>Mountain Climbing</h5>
-                    <p>Address: Suite 214B</p>
-                    <p>1815 Moore Street</p>
-                    <p>Huntingdon, PA 16652</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <a href="#" class="btn btn-outline-light">FOLLOW</a>
-                    <a href="#" class="btn btn-outline-light ms-2">LIKE</a>
-                </div>
-                <div class="col-md-3 text-center">
-                    <p><a href="#" class="text-white text-decoration-none">Home</a> | <a href="#" class="text-white text-decoration-none">Registration</a> | <a href="#" class="text-white text-decoration-none">Store near you</a></p>
-                </div>
-            </div>
+        <div class="footer-links">
+            <a href="#">Home</a> | <a href="#">Registration</a> | <a href="#">Store near you</a>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
