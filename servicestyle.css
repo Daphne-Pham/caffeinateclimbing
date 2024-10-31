@@ -1,0 +1,111 @@
+/* Colors */
+:root {
+    --bright-orange: #fd6f2f;
+    --pale-orange: #ffead1;
+    --light-grayish-yellow: #dce4b8;
+    --dark-grayish-yellow: #515739;
+}
+
+/* Basic reset and font settings */
+body, h1, h2, p, a, button {
+    font-family: 'Aerospace Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: var(--dark-grayish-yellow);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: var(--bright-orange);
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--dark-grayish-yellow);
+}
+
+/* Service Section */
+.service {
+    text-align: center;
+    padding: 20px;
+}
+
+.service h2 {
+    color: var(--dark-grayish-yellow);
+}
+
+.levels {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.level button {
+    background-color: var(--pale-orange);
+    border: 2px solid var(--dark-grayish-yellow);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.level-text {
+    color: var(--dark-grayish-yellow);
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-grayish-yellow);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-social button {
+    background-color: var(--bright-orange);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
