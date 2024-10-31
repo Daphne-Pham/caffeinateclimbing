@@ -24,77 +24,41 @@
       <span>🔍</span>
     </div>
     </div>
-    <section>
+    <section class="service">
         <h2>Ready to dive in some fun and de-stress moment...?</h2>
-        <div>
-            <div>
+        <div class="levels">
+            <div class="level">
                 <button onclick="showLevelInfo('beginner')">Beginner Level</button>
-                <p id="beginner-text" style="display: none;">This level introduces the basics of mountain climbing, focusing on safety and fundamental techniques.</p>
+                <p id="beginner-text" class="level-text hidden">This level introduces basics...</p>
             </div>
-            <div>
-                <button onclick="showLevelInfo('advanced')">Advanced Level</button>
-                <p id="advanced-text" style="display: none;">This level is for experienced climbers, offering challenging trails and advanced climbing techniques.</p>
+            <div class="level">
+                <button onclick="showLevelInfo('advanced')">Advance Level</button>
+                <p id="advanced-text" class="level-text hidden">This level is for experienced climbers...</p>
             </div>
         </div>
     </section>
 
-
+    <!-- Footer -->
     <footer>
-        <div>
-            <p><strong>Caffeinated Climbing</strong></p>
-            <p>Mountain Climbing</p>
-            <p>Address: Suite 214B, 1815 Moore Street, Huntingdon, PA 16652</p>
-            <div>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Caffeinated Climbing Logo">
+                <p>Mountain Climbing</p>
+            </div>
+            <div class="footer-address">
+                <p>Address:</p>
+                <p>Suite 214B</p>
+                <p>1815 Moore Street</p>
+                <p>Huntingdon, PA 16652</p>
+            </div>
+            <div class="footer-social">
                 <button>Follow</button>
                 <button>Like</button>
             </div>
         </div>
-        <div>
+        <div class="footer-links">
             <a href="#">Home</a> | <a href="#">Registration</a> | <a href="#">Store near you</a>
         </div>
     </footer>
-
-    <script type="text/xml" id="levels-data">
-        <levels>
-            <level>
-                <name>Beginner</name>
-                <description>This level introduces the basics of mountain climbing, focusing on safety and fundamental techniques.</description>
-            </level>
-            <level>
-                <name>Advanced</name>
-                <description>This level is for experienced climbers, offering challenging trails and advanced climbing techniques.</description>
-            </level>
-        </levels>
-    </script>
-
-
-    <script>
-        // Show or hide level details
-        function showLevelInfo(level) {
-            const beginnerText = document.getElementById("beginner-text");
-            const advancedText = document.getElementById("advanced-text");
-
-            if (level === 'beginner') {
-                beginnerText.style.display = beginnerText.style.display === 'none' ? 'block' : 'none';
-                advancedText.style.display = 'none';
-            } else if (level === 'advanced') {
-                advancedText.style.display = advancedText.style.display === 'none' ? 'block' : 'none';
-                beginnerText.style.display = 'none';
-            }
-        }
-
-  
-        document.addEventListener("DOMContentLoaded", () => {
-            const xmlData = document.getElementById("levels-data").textContent;
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlData, "text/xml");
-
-            const beginnerDescription = xmlDoc.querySelector("level:nth-of-type(1) description").textContent;
-            const advancedDescription = xmlDoc.querySelector("level:nth-of-type(2) description").textContent;
-
-            document.getElementById("beginner-text").textContent = beginnerDescription;
-            document.getElementById("advanced-text").textContent = advancedDescription;
-        });
-    </script>
 </body>
 </html>
