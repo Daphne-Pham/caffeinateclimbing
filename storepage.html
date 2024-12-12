@@ -67,32 +67,49 @@
             padding: 20px;
         }
 
-        .options {
+        .catalog {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
         }
 
-        .speech-bubble {
-            background-color: #fd6f2f;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 10px;
-            font-family: 'Cooper BT', sans-serif;
+        .catalog-item {
+            border: 1px solid #515739;
+            border-radius: 5px;
+            background-color: white;
+            width: 250px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        button {
+        .catalog-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .catalog-item h3 {
+            font-size: 1.2em;
+            color: #515739;
+        }
+
+        .catalog-item p {
+            color: #fd6f2f;
+        }
+
+        .catalog-item button {
             background-color: #515739;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border-radius: 5px;
             font-family: 'Aerospace Bold', sans-serif;
             cursor: pointer;
         }
 
-        button:hover {
+        .catalog-item button:hover {
             background-color: #fd6f2f;
         }
 
@@ -145,13 +162,26 @@
         </section>
 
         <section class="content">
-            <p>What is the gap between you and us.... :( ?</p>
-            <div class="options">
-                <div class="speech-bubble">
-                    Woo...hooo I cannot see anywhere, please select the most closest point
+            <p>Check out some of the merch we offer in-store! Contact us for payment options through PayPal, Venmo, or Zelle.</p>
+            <div class="catalog">
+                <div class="catalog-item">
+                    <img src="shirt.jpg" alt="Caffeinated Climbing T-Shirt">
+                    <h3>T-Shirt</h3>
+                    <p>$20.00</p>
+                    <button>Contact to Buy</button>
                 </div>
-                <button>Central PA</button>
-                <button>Outside PA</button>
+                <div class="catalog-item">
+                    <img src="mug.jpg" alt="Caffeinated Climbing Mug">
+                    <h3>Mug</h3>
+                    <p>$15.00</p>
+                    <button>Contact to Buy</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="hat.jpg" alt="Caffeinated Climbing Hat">
+                    <h3>Hat</h3>
+                    <p>$18.00</p>
+                    <button>Contact to Buy</button>
+                </div>
             </div>
         </section>
 
@@ -168,16 +198,8 @@
     </main>
 
     <script>
-        // Placeholder for catalog functionality
         document.addEventListener("DOMContentLoaded", () => {
-            // Example for fetching JSON (future implementation)
-            fetch("catalog.json")
-                .then(response => response.json())
-                .then(data => {
-                    console.log("Catalog data:", data);
-                    // Dynamically create catalog here
-                })
-                .catch(error => console.error("Error loading catalog:", error));
+            console.log("Catalog is ready. For purchases, contact us through the provided options.");
         });
     </script>
 </body>
